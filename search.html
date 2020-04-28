@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap 4.4.1 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- hover.css 2.3.1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      type="text/css"
+    />
+    <!-- Font awesome 5.12.1 -->
+    <script
+      src="https://kit.fontawesome.com/fdc5880dc5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/solid.min.js"></script>
+    <title>Korea Travel</title>
+  </head>
+
+  <body>
+    <!-- add div "class = wrap" for footer at bottom always -->
+    <div class="wrap">
+      <header>
+        <!-- Heading 
+            <div class="row no-gutters">
+                <div class="col">
+                        <h1 class="name">Korea Travel</h1>
+                </div>
+            </div>-->
+
+        <!-- Bootstrap Navbar : https://getbootstrap.com/docs/4.4/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <h3>Korea Travel</h3>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler01"
+            aria-controls="navbarToggler01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >HOME<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#.html"
+                  id="infomationmenu"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Story</a
+                >
+                <div class="dropdown-menu" aria-labelledby="infomationmenu">
+                  <a class="dropdown-item" href="#">Search</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">A</a>
+                  <a class="dropdown-item" href="#">B</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wish List</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Images' sources : Please refer on the README.me file -->
+      <section class="container-fluid">
+        <div class="mainpage">
+          <h3 class="section-heading">Place searcher</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div>
+                Search places by...
+                <form>
+                  <input type="radio" id="by_name" name="places" value="place_name" checked/>
+                  <label for="by_name">Place name</label>
+                  <br />
+                  <input type="radio" id="by_type" name="places" value="place_type"/>
+                  <label for="by_type">Type of place</label>
+                </form>
+              </div>
+            <div class = "row">
+              <div class="place_name box">
+                Please write the place name on the text box in the map
+              </div>
+            </div>
+
+            
+            <div class = "row">
+              <div class="place_type box">
+              <div class="place_search">
+                <div id="findhotels">City Name:</div>
+                <div id="locationField">
+                  <input id="autocomplete" placeholder="Enter a city" type="text"/>
+                </div>
+                <div id="controls">
+                  <select id="country">
+                    <option value="kr" selected>South Korea</option>
+                  </select>
+                </div>
+                <div id="select_type">Select a type of place:
+                    <form>
+                        <input type="radio" id="touristattraction" name="placestype" value="touristattraction" selected/>
+                        <label for="touristattraction">Tourist attraction</label>
+                        <br />
+                        <input type="radio" id="accommodation" name="placestype" value="accommodation"/>
+                        <label for="accommodation">Accommodation</label>
+                        <br />
+                        <input type="radio" id="restaurant" name="placestype" value="restaurant"/>
+                        <label for="restaurant">Restaurant</label>
+                        <br />
+                        <input type="radio" id="drink" name="placestype" value="drink"/>
+                        <label for="drink">Bar/Pub/Cafe</label>
+                        <br />
+                        <input type="radio" id="shopping" name="placestype" value="shopping"/>
+                        <label for="shopping">Shopping</label>
+                        <br />
+                        <input type="radio" id="supermarket" name="placestype" value="supermarket"/>
+                        <label for="supermarket">Supermarket/convenience store</label>
+                        <br />
+                        <input type="radio" id="atm" name="placestype" value="atm"/>
+                        <label for="atm">ATM/Bank</label>
+                        <br />
+                        <input type="radio" id="health" name="placestype" value="health"/>
+                        <label for="health">Pharmacy/Hospital</label>
+                        <br />
+                    </form> 
+                </div>
+                
+              </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="col-md-8">
+              <div class="place_name box">
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+                <div id="map_name"></div>
+              </div>
+              <div class="place_type box">
+                <div id="map_type"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+        <div class="col-md-12">
+        
+        <div id="listing">
+          <table id="resultsTable">
+            <tbody id="results"></tbody>
+          </table>
+        </div>
+
+        <div style="display: none;">
+          <div id="info-content">
+            <table>
+              <tr id="iw-url-row" class="iw_table_row">
+                <td id="iw-icon" class="iw_table_icon"></td>
+                <td id="iw-url"></td>
+              </tr>
+              <tr id="iw-address-row" class="iw_table_row">
+                <td class="iw_attribute_name">Address:</td>
+                <td id="iw-address"></td>
+              </tr>
+              <tr id="iw-phone-row" class="iw_table_row">
+                <td class="iw_attribute_name">Telephone:</td>
+                <td id="iw-phone"></td>
+              </tr>
+              <tr id="iw-rating-row" class="iw_table_row">
+                <td class="iw_attribute_name">Rating:</td>
+                <td id="iw-rating"></td>
+              </tr>
+              <tr id="iw-website-row" class="iw_table_row">
+                <td class="iw_attribute_name">Website:</td>
+                <td id="iw-website"></td>
+              </tr>
+            </table>
+          </div></div>
+        </div></div>
+      
+      
+      </section>
+    </div>
+
+    <footer>
+      <div class="social">
+        <h5>Let's connect!</h5>
+        <ul class="list-inline social-links">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.facebook.com/ss831">
+              <i class="fab fa-facebook-square" aria-hidden="true"></i>
+              <span class="sr-only">Facebook</span></a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/songhei-lee-a7ba04139/"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span class="sr-only">Linkedin</span></a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.instagram.com/ss831_/">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <span class="sr-only">Instagram</span></a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/results?search_query=dala+horse"
+            >
+              <i class="fab fa-youtube-square" aria-hidden="true"></i>
+              <span class="sr-only">Youtube</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Script - For Navbar : https://getbootstrap.com/docs/4.4/components/navbar/ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA0TwhmtHwPbGqxzQ3-7IQhyWFGhru_tk&libraries=places&callback=initialize"
+      async
+      defer
+    ></script>
+    
+    <script src="map.js"></script>
+    <script src="Optionshowhide.js"></script>
+  </body>
+</html>

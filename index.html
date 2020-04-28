@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <!-- bootstrap 4.4.1 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- hover.css 2.3.1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      type="text/css"
+    />
+    <!-- Font awesome 5.12.1 -->
+    <script
+      src="https://kit.fontawesome.com/fdc5880dc5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/solid.min.js"></script>
+
+    <title>Korea Travel</title>
+  </head>
+
+  <body>
+    <!-- add div "class = wrap" for footer at bottom always -->
+    <div class="wrap">
+      <header>
+        <!-- Heading 
+            <div class="row no-gutters">
+                <div class="col">
+                        <h1 class="name">Korea Travel</h1>
+                </div>
+            </div>-->
+        <!-- Script - For Navbar : https://getbootstrap.com/docs/4.4/components/navbar/ -->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Bootstrap Navbar : https://getbootstrap.com/docs/4.4/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <h3>Korea Travel</h3>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler01"
+            aria-controls="navbarToggler01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0  text-right">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Images' sources : Please refer on the README.me file -->
+      <section class="container-fluid">
+        <div class="mainpage">
+          <h3 class="section-heading">Welcome to Korea</h3>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 widgets">
+              <div class="row">
+                <h4>Today's Weather</h4>
+                <div>
+                    
+                    <div class="widget-group" id="openweathermap-widget-1"></div>
+                    <div class="widget-group" id="openweathermap-widget-2"></div>
+                    <button class="weather-button" onclick="plusDivs(-1, 0)">&#10094;</button>
+                    <button class="weather-button" onclick="plusDivs(1, 0)">&#10095;</button>
+
+                    <script src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js"></script>
+                    </div>
+              </div>
+              <div class="row">
+                <div>Today's currency rate</div>
+                <div class="currency">
+                <div class="widget-group2 eur-kor">
+                  <p>1 EUR = </p><div class="EUR-KRW"></div><p> KRW</p>
+                  <p>1 KRW = </p><div class="KRW-EUR"></div><p> EUR</p>
+                </div>
+                <div class="widget-group2 usd-kor">
+                  <p>1 USD = </p><div class="USD-KRW"></div><p> KRW</p>
+                  <p>1 KRW = </p><div class="KRW-USD"></div><p> USD</p>
+                </div>
+                <div class="widget-group2 gbp-kor">
+                  <p>1 GBP = </p><div class="GBP-KRW"></div><p> KRW</p>
+                  <p>1 KRW = </p><div class="KRW-GBP"></div><p> GBP</p>
+                </div>
+                <div class="widget-group2 sek-kor">
+                  <p>1 SEK = </p><div class="SEK-KRW"></div><p> KRW</p>
+                  <p>1 KRW = </p><div class="KRW-SEK"></div><p> SEK</p>
+                </div>
+                
+                    <button class="currency-button" onclick="plusDivs(-1, 0)">&#10094;</button>
+                    <button class="currency-button" onclick="plusDivs(1, 0)">&#10095;</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 indeximg">
+                        <img class="img-fluid" src="spring_korea.jpg" alt="spring_korea.jpg"/>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 indeximg">
+                        <img class="img-fluid" src="summer_korea.jpg" alt="summer_korea.jpg"/>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 indeximg">
+                        <img class="img-fluid" src="autumn_korea.jpg" alt="autumn_korea.jpg"/>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 indeximg">
+                        <img class="img-fluid" src="winter_korea.jpg" alt="winter_korea.jpg"/>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="social">
+        <h5>Let's connect!</h5>
+        <ul class="list-inline social-links">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.facebook.com/ss831">
+              <i class="fab fa-facebook-square" aria-hidden="true"></i>
+              <span class="sr-only">Facebook</span></a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/songhei-lee-a7ba04139/"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span class="sr-only">Linkedin</span></a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.instagram.com/ss831_/">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <span class="sr-only">Instagram</span></a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/results?search_query=dala+horse"
+            >
+              <i class="fab fa-youtube-square" aria-hidden="true"></i>
+              <span class="sr-only">Youtube</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+   <script src="weather.js"></script>
+    <script src="currency.js"></script>
+
+    <script src="slide.js"></script>
+    <script src="slide2.js"></script>
+  </body>
+</html>

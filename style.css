@@ -1,0 +1,219 @@
+body {
+  background-color: #e8faff;
+}
+
+.mainpage {
+    margin-left: 35px;
+}
+
+
+.navbar{
+    background-color: #2e49b8;
+   
+}
+
+ 
+ .hvr-back-pulse{
+     background-color :#fcf6ff;
+}
+ .dropdown-menu a:hover{
+     background-color : #caebdb;
+}
+ .navbar-nav{
+     color:#001854;
+     font-size: 22px;
+}
+ .navbar-toggler {
+     margin-left: 20px;
+     border-color: #001854;
+}
+ .navbar-toggler-icon {
+     background-image: url( "data:image/svg+xml; charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 24, 84, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+ .navbar-nav .nav-link {
+     color: #001854;
+}
+ .navbar-brand{
+     margin-left:30px;
+}
+ .nav-item{
+     padding-left: 15px;
+     padding-right: 15px;
+}
+
+.section-heading{
+    margin-bottom: 20px;
+}
+/* --------------------- index.html :-----------------*/
+.widgets{
+    align-items: center;
+}
+.weather-button{
+    width:100px;
+    height:30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.indeximg{
+    padding-left:0;
+    padding-right:0;
+}
+
+div .row .currency {
+  background-color: orange;
+  min-width: 200px;
+  min-height: 150px;
+  color: black;
+  text-align: center;
+}
+
+
+div .row .weather {
+  background-color: orange;
+  max-width: 200px;
+  max-height: 150px;
+  color: black;
+  text-align: center;
+}
+
+.CurrIcon,
+.CurrTemp {
+  display: inline-block;
+  font-size: 1.375rem;
+  /*text-align: center;*/
+}
+
+.TempMin,
+.TempMax {
+  display: inline-block;
+}
+
+.TempMin {
+  color: blue;
+}
+
+.TempMax {
+  color: red;
+}
+
+.CurrIcon {
+  margin-right: 2px;
+}
+.CurrTemp {
+  vertical-align: center;
+}
+.CurrIcon img {
+  width: 50px;
+  height: 50px;
+}
+
+.City {
+  font-size: 1.938rem;
+  /*text-align: center;*/
+}
+
+
+
+#map_name, #map_type {
+    border: 2px solid;
+    min-height: 360px;
+    width: auto;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+table {
+        font-size: 12px;
+      }
+      .hotel-search {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 440px;
+        z-index: 1;
+      }
+      #map {
+        margin-top: 40px;
+        width: 440px;
+      }
+      #listing {
+        position: absolute;
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        left: 442px;
+        top: 0px;
+        cursor: pointer;
+        overflow-x: hidden;
+      }
+      #findhotels {
+        font-size: 14px;
+      }
+      #locationField {
+        -webkit-box-flex: 1 1 190px;
+        -ms-flex: 1 1 190px;
+        flex: 1 1 190px;
+        margin: 0 8px;
+      }
+      #controls {
+        -webkit-box-flex: 1 1 140px;
+        -ms-flex: 1 1 140px;
+        flex: 1 1 140px;
+      }
+      #autocomplete {
+        width: 100%;
+      }
+      #country {
+        width: 100%;
+      }
+      .placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+      }
+      .hotelIcon {
+        width: 24px;
+        height: 24px;
+      }
+      #resultsTable {
+        border-collapse: collapse;
+        width: 240px;
+      }
+      #rating {
+        font-size: 13px;
+        font-family: Arial Unicode MS;
+      }
+      .iw_table_row {
+        height: 18px;
+      }
+      .iw_attribute_name {
+        font-weight: bold;
+        text-align: right;
+      }
+      .iw_table_icon {
+        text-align: right;
+      }
+
+      .box{
+        color: blue;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+    }
+
+    #controls{
+        display:none;
+    }
+    .place_search{
+        display: inline;
+    }
