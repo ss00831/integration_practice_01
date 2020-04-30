@@ -1,9 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&family=Raleway:wght@400;800&display=swap');
+html, body{
+     width: 100%;
+    height: 100%;
+}
+
+
 body {
   background-color: #e8faff;
+  font-family: 'Open Sans', sans-serif;
 }
+
+.wrap {
+    min-height: 100%;
+    padding-bottom: 170px;
+}
+
+footer{
+    margin-top:-130px;
+    padding:5px;
+     text-align: center;
+     background-color: #d1f0d9;
+     width: 100%;
+     height: 130px;
+     line-height: 40px;
+}
+
+.social{
+     margin-top:30px;
+     text-align: center;
+}
+ .list-inline-item{
+     padding: 5px 10px 0px 10px;
+     font-size: 30px;
+}
+ .list-inline-item a{
+     color: #014a00;
+}
+
 
 .mainpage {
     margin-left: 35px;
+    margin-top : 55px;
 }
 
 
@@ -12,26 +49,38 @@ body {
    
 }
 
- 
+.navbar h3{
+   font-family: 'Alfa Slab One', cursive;
+   color: white;
+   font-size:26px;
+   margin-bottom: 0px;
+}
+
+.navbar .nav-link{
+   font-family: 'Open Sans', sans-serif;
+   color: gainsboro;
+   font-weight:bold;
+   font-size:20px;
+}
+
+
+
  .hvr-back-pulse{
      background-color :#fcf6ff;
 }
  .dropdown-menu a:hover{
      background-color : #caebdb;
 }
- .navbar-nav{
+ /*.navbar-nav{
      color:#001854;
      font-size: 22px;
-}
+}*/
  .navbar-toggler {
      margin-left: 20px;
      border-color: #001854;
 }
  .navbar-toggler-icon {
      background-image: url( "data:image/svg+xml; charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 24, 84, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
- .navbar-nav .nav-link {
-     color: #001854;
 }
  .navbar-brand{
      margin-left:30px;
@@ -42,14 +91,32 @@ body {
 }
 
 .section-heading{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
     margin-bottom: 20px;
+    
 }
 /* --------------------- index.html :-----------------*/
-.widgets{
-    align-items: center;
+
+.widgets {
+    padding: 0 35px 0 10px;
 }
+.widgets > .row{
+    align-items: center;
+    display:block;
+    margin : 20px;
+}
+
+
+.widgets > .row h6{
+    font-size : 20px;
+    font-weight:bold;
+    margin-bottom: 15px;
+}
+
 .weather-button{
-    width:100px;
+    /*width:100px;*/
     height:30px;
     color: white;
     background-color: black;
@@ -64,10 +131,11 @@ body {
 
 div .row .currency {
   background-color: orange;
-  min-width: 200px;
+  /*min-width: 200px;*/
   min-height: 150px;
   color: black;
   text-align: center;
+  padding-top: 18px;
 }
 
 
@@ -216,4 +284,38 @@ table {
     }
     .place_search{
         display: inline;
+    }
+
+    .toKor div, .fromKor div{
+        display:inline-block;   
+        font-family: 'Open Sans', sans-serif;
+        vertical-align: middle;
+    }
+
+    
+
+    .toKor{
+        
+        font-size: 18px;
+    }
+    .fromKor{
+        margin-top : 15px;
+        margin-bottom : 12px;
+        font-size: 13px; 
+        padding : 6px;
+        background-color: yellow;
+    }
+    .currency-button{
+        background-color: greenyellow;
+        margin: 0 5px 0 5px;
+    }
+
+    .cal{
+        font-weight: 600;
+        color:red;
+        padding: 0 5px 0 5px;
+    }
+
+    .imggroup{
+        margin-top: 45px;
     }

@@ -8,6 +8,12 @@
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
     />
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
     <!-- bootstrap 4.4.1 -->
     <link
       rel="stylesheet"
@@ -86,45 +92,79 @@
           <div class="row">
             <div class="col-12 col-sm-12 col-md-3 widgets">
               <div class="row">
-                <h4>Today's Weather</h4>
+                <h6>Today's Weather</h6>
                 <div>
-                    
+                <div class="widget-group">
+<a class="weatherwidget-io " href="https://forecast7.com/en/37d57126d98/seoul/" data-label_1="SEOUL" data-label_2="WEATHER" data-font="Trebuchet MS" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >SEOUL WEATHER</a></div>
+<!--<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>-->
+<div class="widget-group">
+<a class="weatherwidget-io" href="https://forecast7.com/en/37d46126d71/incheon/" data-label_1="INCHEON" data-label_2="WEATHER" data-font="Trebuchet MS" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >INCHEON WEATHER</a></div>
+
+<div class="widget-group">
+<a class="weatherwidget-io" href="https://forecast7.com/en/35d18129d08/busan/" data-label_1="BUSAN" data-label_2="WEATHER" data-font="Trebuchet MS" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >BUSAN WEATHER</a></div>
+
+                    <!--
                     <div class="widget-group" id="openweathermap-widget-1"></div>
-                    <div class="widget-group" id="openweathermap-widget-2"></div>
+                    <div class="widget-group" id="openweathermap-widget-2"></div>-->
                     <button class="weather-button" onclick="plusDivs(-1, 0)">&#10094;</button>
                     <button class="weather-button" onclick="plusDivs(1, 0)">&#10095;</button>
 
-                    <script src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js"></script>
+                   <!-- <script src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js"></script>-->
                     </div>
               </div>
               <div class="row">
-                <div>Today's currency rate</div>
+                <h6>Today's currency rate</h6>
                 <div class="currency">
+
                 <div class="widget-group2 eur-kor">
-                  <p>1 EUR = </p><div class="EUR-KRW"></div><p> KRW</p>
-                  <p>1 KRW = </p><div class="KRW-EUR"></div><p> EUR</p>
-                </div>
-                <div class="widget-group2 usd-kor">
-                  <p>1 USD = </p><div class="USD-KRW"></div><p> KRW</p>
-                  <p>1 KRW = </p><div class="KRW-USD"></div><p> USD</p>
-                </div>
-                <div class="widget-group2 gbp-kor">
-                  <p>1 GBP = </p><div class="GBP-KRW"></div><p> KRW</p>
-                  <p>1 KRW = </p><div class="KRW-GBP"></div><p> GBP</p>
-                </div>
-                <div class="widget-group2 sek-kor">
-                  <p>1 SEK = </p><div class="SEK-KRW"></div><p> KRW</p>
-                  <p>1 KRW = </p><div class="KRW-SEK"></div><p> SEK</p>
-                </div>
+                <div class = "toKor">
+                  <div>1 EUR = </div><div class="cal EUR-KRW"></div><div> KRW</div><br/>
                 
-                    <button class="currency-button" onclick="plusDivs(-1, 0)">&#10094;</button>
-                    <button class="currency-button" onclick="plusDivs(1, 0)">&#10095;</button>
+                <div class = "fromKor">
+                  <div>1 KRW = </div><div class="cal KRW-EUR"></div><div> EUR</div>
+                </div>
+                </div></div>
+
+                <div class="widget-group2 usd-kor">
+                <div class = "toKor">
+                  <div>1 USD = </div><div class="cal USD-KRW"></div><div> KRW</div><br/>
+                
+                <div class = "fromKor">
+                  <div>1 KRW = </div><div class="cal KRW-USD"></div><div> USD</div>
+                </div>
+                </div></div>
+
+                <div class="widget-group2 gbp-kor">
+                <div class = "toKor">
+                  <div>1 GBP = </div><div class="cal GBP-KRW"></div><div> KRW</div><br/>
+                
+                <div class = "fromKor">
+                  <div>1 KRW = </div><div class="cal KRW-GBP"></div><div> GBP</div>
+                </div>
+                </div></div>
+
+                <div class="widget-group2 sek-kor">
+                <div class = "toKor">
+                  <div>1 SEK = </div><div class="cal SEK-KRW"></div><div> KRW</div><br/>
+                  
+                  <div class = "fromKor">
+                  <div>1 KRW = </div><div class="cal KRW-SEK"></div><div> SEK</div>
+                  </div>
+                </div>
+                </div>
+
+
+                    <button class="currency-button" onclick="plusDivs2(-1, 0)">&#10094;</button>
+                    <button class="currency-button" onclick="plusDivs2(1, 0)">&#10095;</button>
+
                 </div>
               </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-8">
-                <div class="row">
+                <div class="row imggroup">
                     <div class="col-12 col-sm-6 col-md-6 indeximg">
                         <img class="img-fluid" src="spring_korea.jpg" alt="spring_korea.jpg"/>
                     </div>
@@ -172,7 +212,7 @@
           <li class="list-inline-item">
             <a
               target="_blank"
-              href="https://www.youtube.com/results?search_query=dala+horse"
+              href="https://www.youtube.com/results?search_query=south+korea+travel"
             >
               <i class="fab fa-youtube-square" aria-hidden="true"></i>
               <span class="sr-only">Youtube</span></a
@@ -187,10 +227,10 @@
       integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
       crossorigin="anonymous"
     ></script>
-   <script src="weather.js"></script>
-    <script src="currency.js"></script>
-
-    <script src="slide.js"></script>
-    <script src="slide2.js"></script>
+   <!--<script src="weather.js"></script>-->
+   <script src="currency.js"></script>
+   <!--<script src="slide.js"></script>
+    
+<script src="slide2.js"></script>-->
   </body>
 </html>
